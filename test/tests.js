@@ -46,16 +46,11 @@ test('List manipulation', function () {
   playlist.add({ title: 'Something', id: 6 });
   equal(playlist.count(), 6, 'item added');
 
-  playlist.add({ title: 'Oettinger', id: 7 });
-  equal(playlist.count(), 7, 'another item added');
-
   playlist.remove(1);
   equal(playlist.count(), 6, 'item removed');
-  equal(playlist.get()[1].id, 3, 'list integrity is correct');
 
   playlist.insert(1, { title: 'yoyo', id: 234234 });
   equal(playlist.get()[1].title, 'yoyo', 'item inserted at index');
-
 
   playlist.play();
   equal(playlist.current(), 0, 'index is 0');
