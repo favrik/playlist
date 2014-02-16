@@ -47,7 +47,7 @@ test('List manipulation', function () {
   equal(playlist.count(), 6, 'item added');
 
   playlist.remove(1);
-  equal(playlist.count(), 6, 'item removed');
+  equal(playlist.count(), 5, 'item removed');
 
   playlist.insert(1, { title: 'yoyo', id: 234234 });
   equal(playlist.get()[1].title, 'yoyo', 'item inserted at index');
