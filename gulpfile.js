@@ -17,4 +17,4 @@ gulp.task('build', function () {
   }
 });
 
-gulp.task('default', ['test']);
+gulp.task('default', ['build', 'test']);
