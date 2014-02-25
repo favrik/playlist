@@ -21,9 +21,7 @@ class Playlist
 
   add: (item) -> @items.push item
 
-  remove: (index) ->
-    if index > -1
-      @items.splice index, 1
+  remove: (index) -> if index > -1 then  @items.splice index, 1
 
   insert: (index, item) -> @items.splice(index, 0, item)
 
@@ -39,11 +37,8 @@ class Playlist
 
   next: ->
     nextIndex = @index + 1
-    if nextIndex > @items.length - 1
-      nextIndex = 0
+    if nextIndex > @items.length - 1 then nextIndex = 0
 
     @index = nextIndex
 
-    if @conf.hasOwnProperty('player')
-      @conf.player.play @items[@index]
-
+    if @conf.hasOwnProperty('player') then @conf.player.play @items[@index]
