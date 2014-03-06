@@ -1,7 +1,7 @@
 "use strict";
 
-var Playlist = function (items) {
-  this.initialize(items);
+var Playlist = function () {
+  this.initialize(arguments.length >= 1 ? arguments[0] : []);
   this.configure(arguments.length > 1 ? arguments[1] : {});
 };
 

@@ -1,7 +1,7 @@
 class Playlist
-  constructor: (items) ->
+  constructor: (items = [], configuration = {}) ->
     this.initialize items
-    this.configure if arguments.length > 1 then arguments[1] else {}
+    this.configure configuration
 
   initialize: (items) -> @items = items
 
