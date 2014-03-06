@@ -1,6 +1,13 @@
 {
   "name": "playlist",
   "version": "0.0.1",
+  "main": "build/playlist.js",
+  "ignore": [
+    "gulpfile.js",
+    "package.json",
+    "README.md",
+    "**/.*"
+  ],
   "dependencies": {},
   "devDependencies": {
     "qunit": "*"
