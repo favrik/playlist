@@ -1,14 +1,19 @@
 # Playlist
 
-A generic playlist widget, or an experiment gone bad!
+A generic playlist library, or an experiment gone bad!
 
 ## To Do
 
-- Add simple UI
 - Define how it is controlled or whom it controls
 
 
 ## Installation
+```bash
+bower install playlist --save
+```
+
+## Development
+After forking/cloning the project:
 ```bash
 npm install
 bower install
